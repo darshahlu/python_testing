@@ -1,16 +1,18 @@
-# Launching jupyter
-1. Clone the repository and navigate to the python_testing directory.
-2. The requirements are:
+# Getting started
+
+## Clone the repository
+git clone https://github.com/darshahlu/python_testing.git
+
+## Launch the Jupyter Notebook
 ```
-pip install jupyter
-pip install pytest
-pip install pytest-cov
-pip install pytest-django
-pip install ipytest
-pip install git+https://github.com/akaihola/ipython_pytest
+cd python_testing
+pip install -r requirements-py363-win.txt
+cd jupyter_presentation
+jupyter notebook
 ```
-3. ```cd jupyter_presentation```
-4. Currently the notebook is configured to be available at http://localhost/tree?token=LittleMonkey! See jupyter_notebook_config.py.:
-    1. c.NotebookApp.ip = 'localhost'
-    2. c.NotebookApp.token = 'LittleMonkey!'
-5. Launch the server by running this command: ```jupyter notebook```
+
+## Run the example pytests
+```
+cd python_testing
+pytest
+```

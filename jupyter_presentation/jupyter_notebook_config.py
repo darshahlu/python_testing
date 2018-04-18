@@ -45,7 +45,7 @@ c.Application.log_level = 'DEBUG'
 #  Use '*' to allow any origin to access your server.
 #  
 #  Takes precedence over allow_origin_pat.
-c.NotebookApp.allow_origin = '10.*'
+#c.NotebookApp.allow_origin = ''
 
 ## Use a regular expression for the Access-Control-Allow-Origin header
 #  
@@ -59,7 +59,7 @@ c.NotebookApp.allow_origin = '10.*'
 #c.NotebookApp.allow_origin_pat = ''
 
 ## Whether to allow the user to run the notebook as root.
-c.NotebookApp.allow_root = True
+c.NotebookApp.allow_root = False
 
 ## DEPRECATED use base_url
 #c.NotebookApp.base_project_url = '/'
@@ -205,7 +205,7 @@ c.NotebookApp.ip = 'localhost'
 #  platform dependent and determined by the python standard library `webbrowser`
 #  module, unless it is overridden using the --browser (NotebookApp.browser)
 #  configuration option.
-c.NotebookApp.open_browser = False
+c.NotebookApp.open_browser = True
 
 ## Hashed password to use for web authentication.
 #  
@@ -258,7 +258,7 @@ c.NotebookApp.port = 80
 #  
 #  Setting to an empty string disables authentication altogether, which is NOT
 #  RECOMMENDED.
-c.NotebookApp.token = 'LittleMonkey!'
+#c.NotebookApp.token = ''
 
 ## Supply overrides for the tornado.web.Application that the Jupyter notebook
 #  uses.

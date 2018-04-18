@@ -1,3 +1,5 @@
+-e git://github.com/akaihola/ipython_pytest#egg=ipython-pytest
+
 attrs==17.4.0
 backcall==0.1.0
 bleach==2.1.3
@@ -13,7 +15,6 @@ ipykernel==4.8.2
 ipytest==0.2.1
 ipython==6.3.1
 ipython-genutils==0.2.0
-ipython-pytest==0.0.1.dev0
 ipywidgets==7.2.0
 jedi==0.11.1
 Jinja2==2.10
